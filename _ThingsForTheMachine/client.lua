@@ -88,7 +88,7 @@ AddEventHandler("fireRemover", function()
     if scriptData.fires[i] == nil then
       --do nothing
     else
-      RemoveScriptFire(scriptData.fires[i])
+      RemoveScriptFire(scriptData.fires)  -- Will only remove the main fire
     end
     RemoveParticleFx(scriptData.particles[i], true)
   end
